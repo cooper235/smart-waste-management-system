@@ -23,6 +23,8 @@ yarn-error.log*
 .env.local
 .env.development.local
 .env.test.local
+.env.example
+**/.env.example
 # Allow production env for Vercel
 !frontend/.env.production
 
