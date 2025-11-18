@@ -35,7 +35,7 @@ const uploadImage = async () => {
     form.append("caption", "Test upload");
 
     const response = await axios.post(
-      `http://localhost:5000/api/bins/${binId}/upload`,
+      `https://waste-management-system-1-uyth.onrender.com/api/bins/${binId}/upload`,
       form,
       { headers: form.getHeaders() }
     );

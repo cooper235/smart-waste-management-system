@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # API Configuration
-API_URL = os.getenv('API_URL', 'http://localhost:5000')
+API_URL = os.getenv('API_URL', 'https://waste-management-system-1-uyth.onrender.com')
 HEALTH_API_ENDPOINT = f'{API_URL}/api/rpi-health'
 DEVICE_ID = os.getenv('RPI_DEVICE_ID', 'rpi-main')
 UPDATE_INTERVAL = int(os.getenv('RPI_UPDATE_INTERVAL', '5'))

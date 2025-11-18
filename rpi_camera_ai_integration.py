@@ -29,7 +29,7 @@ NUM_CLASSES = 10
 device = torch.device("cpu")
 
 # API Configuration
-API_URL = os.getenv('API_URL', 'http://localhost:5000')
+API_URL = os.getenv('API_URL', 'https://waste-management-system-1-uyth.onrender.com')
 CAMERA_FEED_ENDPOINT = f'{API_URL}/api/camera-feed/upload'
 LOCATION = os.getenv('CAMERA_LOCATION', 'Main Collection Point - IIT Mandi')
 DEVICE_ID = os.getenv('CAMERA_DEVICE_ID', 'rpi-camera-1')

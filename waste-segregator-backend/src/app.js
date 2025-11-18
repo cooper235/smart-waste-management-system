@@ -19,7 +19,7 @@ app.use(securityHeaders)
 
 // CORS: support comma-separated FRONTEND_URL or single origin.
 // safe check function ensures only allowed origins are accepted.
-const allowedOrigins = (process.env.FRONTEND_URL || "http://localhost:3000")
+const allowedOrigins = (process.env.FRONTEND_URL || "https://waste-management-system-1-uyth.onrender.com")
   .split(",")
   .map((u) => u.trim())
   .filter(Boolean)

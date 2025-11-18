@@ -51,7 +51,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # API Configuration
-API_URL = os.getenv('API_URL', 'http://localhost:5000')
+API_URL = os.getenv('API_URL', 'https://waste-management-system-1-uyth.onrender.com')
 HEALTH_API_ENDPOINT = f'{API_URL}/api/rpi-health'
 DEVICE_ID = os.getenv('RPI_DEVICE_ID', 'rpi-main')
 UPDATE_INTERVAL = int(os.getenv('RPI_UPDATE_INTERVAL', '5'))
@@ -202,9 +202,9 @@ echo -e "${YELLOW}Step 5: Creating environment configuration...${NC}"
 echo ""
 echo -e "${GREEN}Please enter your backend API URL:${NC}"
 echo "Examples:"
-echo "  - http://localhost:5000 (if backend is on this Pi)"
+echo "  - https://waste-management-system-1-uyth.onrender.com (production)"
 echo "  - http://192.168.1.100:5000 (if backend is on another computer)"
-echo "  - https://your-backend.vercel.app (if deployed to cloud)"
+echo "  - http://localhost:5000 (if backend is on this Pi)"
 echo ""
 read -p "API URL: " api_url
 

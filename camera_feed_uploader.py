@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configuration
-API_URL = os.getenv('API_URL', 'http://localhost:5000')
+API_URL = os.getenv('API_URL', 'https://waste-management-system-1-uyth.onrender.com')
 CAMERA_FEED_ENDPOINT = f'{API_URL}/api/camera-feed/upload'
 IMAGE_PATH = os.getenv('CAMERA_IMAGE_PATH', 'D:/wastemain210DS/download.webp')
 LOCATION = os.getenv('CAMERA_LOCATION', 'Main Collection Point - IIT Mandi')
