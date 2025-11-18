@@ -1,4 +1,8 @@
+// API Configuration - Single source of truth for all API calls
 const API_BASE_URL = process.env.REACT_APP_API_URL || "https://waste-management-system-1-uyth.onrender.com"
+
+// Export the base URL for direct use
+export const API_URL = API_BASE_URL
 
 export const apiClient = {
   baseURL: API_BASE_URL,
