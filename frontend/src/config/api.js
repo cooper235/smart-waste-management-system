@@ -1,4 +1,4 @@
-const API_BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:5000"
+const API_BASE_URL = process.env.REACT_APP_API_URL || "https://waste-management-system-1-uyth.onrender.com"
 
 export const apiClient = {
   baseURL: API_BASE_URL,
