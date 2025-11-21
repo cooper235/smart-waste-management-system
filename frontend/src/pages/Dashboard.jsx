@@ -46,7 +46,7 @@ const Dashboard = () => {
       if (response.data.success) {
         setRpiHealth(response.data.data)
 
-        const logsResponse = await axios.get("https://waste-management-system-1-uyth.onrender.com/api/rpi-health/logs?limit=5")
+        const logsResponse = await axios.get("https://waste-management-system-1-uyth.onrender.com/api/rpi-health?limit=5")
         if (logsResponse.data.success) {
           setRpiLogs(logsResponse.data.data)
         }
