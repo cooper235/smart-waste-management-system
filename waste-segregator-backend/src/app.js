@@ -17,12 +17,11 @@ const errorHandler = require("./middlewares/errorHandler")
 
 app.use(securityHeaders)
 
-// CORS: support comma-separated FRONTEND_URL or single origin.
-// safe check function ensures only allowed origins are accepted.
-const allowedOrigins = (process.env.FRONTEND_URL || "https://waste-management-system-kappa.vercel.app,https://smart-waste.softkernel.tech")
-  .split(",")
-  .map((u) => u.trim())
-  .filter(Boolean)
+// CORS: Hardcoded allowed origins for both frontends
+const allowedOrigins = [
+  "https://waste-management-system-kappa.vercel.app",
+  "https://smart-waste.softkernel.tech"
+]
 
 console.log("🔐 Allowed CORS Origins:", allowedOrigins)
 
